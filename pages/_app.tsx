@@ -1,7 +1,8 @@
-import React from 'react'
 import Head from 'next/head'
 
-import '../static/globals.css'
+import { ColorThemeProvider } from '../lib/ColorThemeContext'
+
+import '../static/globals.scss'
 
 const MyApp = ({ Component, pageProps }) => {
     return (
@@ -12,7 +13,9 @@ const MyApp = ({ Component, pageProps }) => {
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
             </Head>
-            <Component {...pageProps} />
+            <ColorThemeProvider>
+                <Component {...pageProps} />
+            </ColorThemeProvider>
         </>
     )
 }
