@@ -1,0 +1,41 @@
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 96px;
+    top: 0;
+    color: #fefefe;
+    background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
+    padding: 0 min(2.4vw, 30px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 1.6rem;
+}
+
+.links-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    font-size: min(1.6vw, 24px);
+}
+
+.link:not(:last-of-type) {
+    margin-right: min(2.4vw, 48px);
+}
+
+.link:last-of-type {
+    margin-right: 0;
+}
+
+.link {
+    transition: all .3s;
+    opacity: 1;
+    font-family: AvenirNextLTPro-BoldCn, sans-serif;
+}
