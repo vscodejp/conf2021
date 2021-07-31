@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Link from 'next/link'
 import styles from '../static/Header.module.scss'
 import { conferenceName } from '../utils/constants'
 
@@ -7,23 +8,23 @@ import { ColorThemeSwitch } from './ColorThemeSwitch'
 const Header: FC = () => {
   return (
     <div className={styles.header}>
-      <a href="/" className={styles.logo}>
-        {conferenceName}
-      </a>
+      <Link href="/">
+        <a className={styles.logo}>{conferenceName}</a>
+      </Link>
       <div className={styles.linksWrapper}>
         <nav className={styles.links}>
-          <a href="/#about" className={styles.link}>
-            {'About'}
-          </a>
-          <a href="/#speakers" className={styles.link}>
-            {'Speakers'}
-          </a>
-          <a href="/#timetable" className={styles.link}>
-            {'Timetable'}
-          </a>
-          <a href="/#staffs" className={styles.link}>
-            {'Staffs'}
-          </a>
+          <Link href="/#about">
+            <a className={styles.link}>{'About'}</a>
+          </Link>
+          <Link href="/#speakers">
+            <a className={styles.link}>{'Speakers'}</a>
+          </Link>
+          <Link href="/#timetable">
+            <a className={styles.link}>{'Timetable'}</a>
+          </Link>
+          <Link href="/#staffs">
+            <a className={styles.link}>{'Staffs'}</a>
+          </Link>
           <a href="#" className={styles.link}>
             <ColorThemeSwitch />
           </a>
