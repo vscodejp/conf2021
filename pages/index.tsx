@@ -10,26 +10,26 @@ import Staffs from '../components/Staffs'
 import Footer from '../components/Footer'
 
 export default function Home() {
-    return (
-        <>
-            <SEO />
-            <div className={styles.container}>
-                <Head>
-                    <title>Create Next App</title>
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
+  return (
+    <>
+      <SEO />
+      <div className={styles.container}>
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-                <Header />
+        <Header />
 
-                <main className={styles.main}>
-                    <About />
-                    <Speakers />
-                    <Timetable />
-                    <Staffs />
-                </main>
+        <main className={styles.main}>
+          <About />
+          <Speakers />
+          <Timetable />
+          <Staffs />
+        </main>
 
-                <Footer />
-            </div>
-        </>
-    )
+        <Footer />
+      </div>
+    </>
+  )
 }
