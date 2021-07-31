@@ -12,6 +12,7 @@ const Staffs: FC = () => {
           return (
             <div key={member.name} className={styles.icon}>
               <Image
+                alt={`Image ${member.name}`}
                 src={`/icons/${member.iconFilename}`}
                 width={120}
                 height={120}

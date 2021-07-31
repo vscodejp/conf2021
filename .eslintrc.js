@@ -1,5 +1,6 @@
 module.exports = {
     extends: [
+        'next',
         '@nekohack/eslint-config-react'
     ],
     plugins: [
