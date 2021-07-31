@@ -2,9 +2,9 @@ import { FC } from 'react'
 import { themeColors } from './constants'
 
 const ColorThemeScript: FC = () => (
-    <script
-        dangerouslySetInnerHTML={{
-            __html: `
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
                 (function() {
                     var preferDarkQuery = '(prefers-color-scheme: dark)';
                     var mql = window.matchMedia(preferDarkQuery);
@@ -46,8 +46,8 @@ const ColorThemeScript: FC = () => (
                     }
                 })();
             `,
-        }}
-    />
+    }}
+  />
 )
 
 export default ColorThemeScript
