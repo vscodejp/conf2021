@@ -13,7 +13,7 @@ const Staffs: FC = () => {
             <div key={member.name} className={styles.icon}>
               <img
                 alt={`Image ${member.name}`}
-                src={`/icons/${member.iconFilename}`}
+                src={`icons/${member.iconFilename}`}
                 width={120}
                 height={120}
               />
