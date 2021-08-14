@@ -10,6 +10,7 @@ const nextConfig = {
     trailingSlash: true,
     pwa: {
         dest: 'public',
+        subdomainPrefix: urlPrefix,
         runtimeCaching,
     },
     exportPathMap: async function (

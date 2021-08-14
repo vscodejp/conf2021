@@ -9,7 +9,7 @@
     }
   ],
   "Scope": "/conf2021/",
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "fullscreen",
   "theme_color": "#000",
   "background_color": "#000"
