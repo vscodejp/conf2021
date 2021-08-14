@@ -1,7 +1,7 @@
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
 
 const nextConfig = {
     target: 'server',

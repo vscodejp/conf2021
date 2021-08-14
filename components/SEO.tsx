@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import { conferenceName } from '../utils/constants'
 
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+
 const SEO = () => {
   return (
     <>
       <Head>
         <title>{conferenceName}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href={`${urlPrefix}/favicon.ico`} />
+        <link rel="manifest" href={`${urlPrefix}/manifest.json`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="description" content="" key="description" />
         <meta
