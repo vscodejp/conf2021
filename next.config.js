@@ -1,3 +1,6 @@
+const withPWA = require('next-pwa')
+const runtimeCaching = require('next-pwa/cache')
+
 const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
 
 const nextConfig = {
@@ -5,6 +8,10 @@ const nextConfig = {
     assetPrefix: urlPrefix,
     basePath: urlPrefix,
     trailingSlash: true,
+    pwa: {
+        dest: 'public',
+        runtimeCaching,
+    },
     exportPathMap: async function (
         defaultPathMap,
         { dev, dir, outDir, distDir, buildId }
@@ -18,4 +25,4 @@ const nextConfig = {
     },
 }
 
-module.exports = nextConfig
+module.exports = withPWA(nextConfig)
