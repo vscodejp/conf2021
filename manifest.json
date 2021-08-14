@@ -8,7 +8,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "https://vscodejp.github.io/conf2021/",
   "display": "fullscreen",
   "theme_color": "#000",
   "background_color": "#000"
