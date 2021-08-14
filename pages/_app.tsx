@@ -4,7 +4,7 @@ import { ColorThemeProvider } from '../lib/ColorThemeContext'
 
 import '../static/globals.scss'
 
-const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
 
 const MyApp = ({ Component, pageProps }) => {
   return (
