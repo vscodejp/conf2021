@@ -8,6 +8,7 @@
       "sizes": "512x512"
     }
   ],
+  "Scope": "/conf2021/",
   "start_url": "/",
   "display": "fullscreen",
   "theme_color": "#000",
