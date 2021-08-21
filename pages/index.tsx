@@ -9,6 +9,8 @@ import Timetable from '../components/Timetable'
 import Staffs from '../components/Staffs'
 import Footer from '../components/Footer'
 
+const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+
 export default function Home() {
   return (
     <>
@@ -16,7 +18,7 @@ export default function Home() {
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href={`${urlPrefix}/favicon.ico`} />
         </Head>
 
         <Header />
