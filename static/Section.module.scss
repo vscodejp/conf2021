@@ -43,21 +43,3 @@
     align-items: center;
     vertical-align: middle;
 }
-
-.icon {
-    margin: 8px;
-    display: flex;
-    justify-content: center;
-    width: 42%;
-}
-
-.info {
-    margin-left: 12px;
-    font-size: min(1.6vw, 24px);
-    font-family: "UD新ゴ B",sans-serif;
-    padding: min(1.6vw, 22px) 0;
-}
-
-.icon img {
-    border-radius: min(0.4vw, 5px);
-}
