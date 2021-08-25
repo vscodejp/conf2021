@@ -43,3 +43,27 @@
     align-items: center;
     vertical-align: middle;
 }
+
+@media (max-width: 600px) {
+    .detail dl {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .detail dt {
+        text-align: center;
+        padding: 1.2rem 0 0;
+        margin: 0;
+    }
+
+    .detail dd {
+        text-align: center;
+        padding: 0 0 1.2rem;
+        margin: 0;
+    }
+}
