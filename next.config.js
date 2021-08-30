@@ -4,7 +4,7 @@ const runtimeCaching = require('next-pwa/cache')
 const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
 
 const nextConfig = {
-    target: 'server',
+    target: 'serverless',
     assetPrefix: urlPrefix,
     basePath: urlPrefix,
     trailingSlash: true,
