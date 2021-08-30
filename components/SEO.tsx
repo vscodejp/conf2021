@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { conferenceName } from '../utils/constants'
+import { conferenceName, description } from '../utils/constants'
 
 const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
 
@@ -11,27 +11,52 @@ const SEO = () => {
         <link rel="icon" href={`${urlPrefix}/favicon.ico`} />
         <link rel="manifest" href={`${urlPrefix}/manifest.json`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="description" content="" key="description" />
+        <meta property="description" content={description} key="description" />
+        <meta
+          property="og:site_name"
+          content={conferenceName}
+          key="description"
+        />
+        <meta property="og:type" content="website" key="description" />
+        <meta property="og:description" content={description} key="description" />
+        <meta
+          property="og:title"
+          content={conferenceName}
+          key="twitter:title"
+        />
+        <meta property="og:url" content={conferenceName} key="twitter:title" />
+        <meta
+          property="og:image"
+          content={`${urlPrefix}/concept.png`}
+          key="twitter:title"
+        />
+        <meta
+          property="twitter:description"
+          content={description}
+          key="twitter:description"
+        />
         <meta
           property="twitter:title"
           content={conferenceName}
           key="twitter:title"
         />
         <meta
-          property="twitter:description"
-          content=""
-          key="twitter:description"
+          property="twitter:card"
+          content="summary_large_image"
+          key="twitter:card"
         />
-        <meta property="twitter:card" content="summary" key="twitter:card" />
+        <meta property="twitter:site" content="@vscodejp" key="twitter:site" />
         <meta
-          property="twitter:site"
-          content="@jiyuujinlab"
+          property="twitter:creator"
+          content="@vscodejp"
           key="twitter:site"
         />
-        <meta property="og:site_name" content="summary" key="og:site_name" />
-        <meta property="og:type" content="website" key="og:type" />
-        <meta property="og:title" content={conferenceName} key="title" />
-        <meta property="og:description" content="" key="og:description" />
+        <meta property="twitter:site" content="@vscodejp" key="twitter:site" />
+        <meta
+          property="og:image"
+          content={`${urlPrefix}/concept.png`}
+          key="twitter:title"
+        />
       </Head>
     </>
   )
