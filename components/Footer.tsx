@@ -12,7 +12,7 @@ const Footer: FC = () => {
         <Link href="/contact">{'問い合わせ'}</Link>
       </p>
       <p className={styles.copyright}>
-        {`Created © 2020 ${organizationName}. All Rights Reserved.`}
+        {`Created © 2021 ${organizationName}. All Rights Reserved.`}
       </p>
     </footer>
   )
