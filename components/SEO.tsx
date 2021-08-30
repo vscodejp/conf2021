@@ -11,51 +11,19 @@ const SEO = () => {
         <link rel="icon" href={`${urlPrefix}/favicon.ico`} />
         <link rel="manifest" href={`${urlPrefix}/manifest.json`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="description" content={description} key="description" />
-        <meta
-          property="og:site_name"
-          content={conferenceName}
-          key="description"
-        />
-        <meta property="og:type" content="website" key="description" />
-        <meta
-          property="og:description"
-          content={description}
-          key="description"
-        />
-        <meta
-          property="og:title"
-          content={conferenceName}
-          key="twitter:title"
-        />
-        <meta property="og:url" content={conferenceName} key="twitter:title" />
-        <meta
-          property="og:image"
-          content={`${urlPrefix}/concept.png`}
-          key="twitter:title"
-        />
-        <meta
-          property="twitter:description"
-          content={description}
-          key="twitter:description"
-        />
-        <meta
-          property="twitter:title"
-          content={conferenceName}
-          key="twitter:title"
-        />
-        <meta
-          property="twitter:card"
-          content="summary_large_image"
-          key="twitter:card"
-        />
-        <meta property="twitter:site" content="@vscodejp" key="twitter:site" />
-        <meta
-          property="twitter:creator"
-          content="@vscodejp"
-          key="twitter:site"
-        />
-        <meta property="twitter:site" content="@vscodejp" key="twitter:site" />
+        <meta property="description" content={description} />
+        <meta property="og:site_name" content={conferenceName} />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content={description} />
+        <meta property="og:title" content={conferenceName} />
+        <meta property="og:url" content={conferenceName} />
+        <meta property="og:image" content={`${urlPrefix}/concept.png`} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:title" content={conferenceName} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@vscodejp" />
+        <meta property="twitter:creator" content="@vscodejp" />
+        <meta property="twitter:site" content="@vscodejp" />
         <meta
           property="og:image"
           content={`${urlPrefix}/concept.png`}
