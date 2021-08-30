@@ -1,6 +1,6 @@
 # VS Code Conference JP 2021 official website
 
-[VS Code Conference JP 2021](https://flutterkaigi.jp)
+[VS Code Conference JP 2021](https://vscodejp.github.io/conf2021)
 
 ## Development
 
