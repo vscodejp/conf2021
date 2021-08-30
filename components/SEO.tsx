@@ -18,7 +18,11 @@ const SEO = () => {
           key="description"
         />
         <meta property="og:type" content="website" key="description" />
-        <meta property="og:description" content={description} key="description" />
+        <meta
+          property="og:description"
+          content={description}
+          key="description"
+        />
         <meta
           property="og:title"
           content={conferenceName}
