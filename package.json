@@ -7,6 +7,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
     "lint": "eslint ./ --ext ts,tsx",
     "lint:fix": "eslint ./ --ext ts,tsx --fix",
     "test": "jest",
@@ -40,6 +41,7 @@
     "jest": "^26.6.0",
     "next-pwa": "^5.2.24",
     "sass": "^1.32.7",
+    "prettier": "^2.3.2",
     "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   },

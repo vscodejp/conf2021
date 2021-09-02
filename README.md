@@ -6,9 +6,9 @@
 
 We will deliver sessions related to VS Code Conference JP.
 
-|Home|
-|:---:|
-|![](https://i.imgur.com/OTTatpw.jpg)|
+|                 Home                 |
+| :----------------------------------: |
+| ![](https://i.imgur.com/OTTatpw.jpg) |
 
 ### Tech Stacks
 

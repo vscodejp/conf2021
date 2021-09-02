@@ -1,10 +1,10 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import { ColorThemeProvider } from '../lib/ColorThemeContext'
+import { ColorThemeProvider } from "../lib/ColorThemeContext";
 
-import '../static/globals.scss'
+import "../static/globals.scss";
 
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+const urlPrefix = process.env.NODE_ENV === "production" ? "/conf2021" : "";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </ColorThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default MyApp
+export default MyApp;

@@ -5,7 +5,7 @@
   padding-top: min(7.32064vw, 100px);
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
   .schedule {
     display: grid;
     grid-gap: 1em;
@@ -30,7 +30,7 @@
       [time-1800] 1fr
       [time-1830] 1fr
       [time-1900] 1fr;
-    
+
     grid-template-columns:
       [times] 4em
       [track1-start] 1fr
@@ -49,7 +49,7 @@
   grid-column: times;
 }
 
-@supports( display:grid ) {
+@supports (display: grid) {
   @media screen and (min-width: 700px) {
     .trackslot {
       display: block;
@@ -57,30 +57,28 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background-color: rgba(255, 255, 255, .9);
+      background-color: rgba(255, 255, 255, 0.9);
     }
   }
 }
 
 .session {
-  margin-bottom:  1em;
+  margin-bottom: 1em;
 }
 
-@supports( display:grid ) {
+@supports (display: grid) {
   @media screen and (min-width: 700px) {
     .session {
       margin: 0;
-    } 
+    }
   }
 }
 
 .session {
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 2px;
   font-size: 14px;
-  box-shadow:
-    rgba(255, 255, 255, .6) 1px 1px 0,
-    rgba(0, 0, 0, .3) 4px 4px 0;
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.3) 4px 4px 0;
 }
 
 .sessionTitle,
@@ -99,20 +97,20 @@
 .sessionTitle a {
   color: #fff;
   text-decoration-style: dotted;
-  
+
   &:hover {
     font-style: italic;
   }
-  
+
   &:focus {
-    outline: 2px dotted rgba(255, 255, 255, .8);
+    outline: 2px dotted rgba(255, 255, 255, 0.8);
   }
 }
 
 .trackslot,
 .timeslot {
   font-weight: bold;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 .track1 {

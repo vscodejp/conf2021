@@ -1,17 +1,17 @@
-import Head from 'next/head'
-import styles from '../static/Home.module.scss'
+import Head from "next/head";
+import styles from "../static/Home.module.scss";
 
-import SEO from '../components/SEO'
-import Header from '../components/Header'
-import Concept from '../components/Concept'
-import About from '../components/About'
-import Speakers from '../components/Speakers'
-import Timetable from '../components/Timetable'
-import Staffs from '../components/Staffs'
-import Footer from '../components/Footer'
-import { conferenceName } from '../utils/constants'
+import SEO from "../components/SEO";
+import Header from "../components/Header";
+import Concept from "../components/Concept";
+import About from "../components/About";
+import Speakers from "../components/Speakers";
+import Timetable from "../components/Timetable";
+import Staffs from "../components/Staffs";
+import Footer from "../components/Footer";
+import { conferenceName } from "../utils/constants";
 
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+const urlPrefix = process.env.NODE_ENV === "production" ? "/conf2021" : "";
 
 export default function Home() {
   return (
@@ -36,5 +36,5 @@ export default function Home() {
         <Footer />
       </div>
     </>
-  )
+  );
 }

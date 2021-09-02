@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import { conferenceName, description } from '../utils/constants'
+import Head from "next/head";
+import { conferenceName, description } from "../utils/constants";
 
 const urlPrefix =
-  process.env.NODE_ENV === 'production'
-    ? 'https://vscodejp.github.io/conf2021'
-    : ''
+  process.env.NODE_ENV === "production"
+    ? "https://vscodejp.github.io/conf2021"
+    : "";
 
 const SEO = () => {
   return (
@@ -34,7 +34,7 @@ const SEO = () => {
         />
       </Head>
     </>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

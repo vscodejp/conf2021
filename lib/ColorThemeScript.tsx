@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import { themeColors } from './constants'
+import { FC } from "react";
+import { themeColors } from "./constants";
 
 const ColorThemeScript: FC = () => (
   <script
@@ -48,6 +48,6 @@ const ColorThemeScript: FC = () => (
             `,
     }}
   />
-)
+);
 
-export default ColorThemeScript
+export default ColorThemeScript;

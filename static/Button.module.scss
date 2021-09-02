@@ -1,17 +1,17 @@
 .button {
-    color: #fff;
-    background-color: #0065a9;
-    border-radius: min(0.4vw, 5px);
-    display: inline-flex;
-    font-size: min(1.6vw, 24px);
-    line-height: 1;
-    font-family: "UD新ゴ M",sans-serif;
-    padding: 0 min(7.2vw, 100px);
-    height: min(6vw, 86px);
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    position: relative;
-    box-shadow: 0 6px 0 #0098ff;
-    transition: all .3s;
+  color: #fff;
+  background-color: #0065a9;
+  border-radius: min(0.4vw, 5px);
+  display: inline-flex;
+  font-size: min(1.6vw, 24px);
+  line-height: 1;
+  font-family: "UD新ゴ M", sans-serif;
+  padding: 0 min(7.2vw, 100px);
+  height: min(6vw, 86px);
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  box-shadow: 0 6px 0 #0098ff;
+  transition: all 0.3s;
 }

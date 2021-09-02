@@ -1,6 +1,6 @@
 export const members = [
   {
-    name: 'jiyuujin',
-    iconFilename: 'bakeneko2.png',
+    name: "jiyuujin",
+    iconFilename: "bakeneko2.png",
   },
-]
+];
