@@ -14,11 +14,6 @@
     "isolatedModules": true,
     "jsx": "react"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "__mocks__/style-mock.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__mocks__/style-mock.js"],
   "exclude": ["node_modules"]
 }
