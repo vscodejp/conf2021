@@ -1,14 +1,14 @@
 .concept {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 600px) {
-    .concept {
-        img {
-            width: 100%;
-            height: 200px;
-        }
+  .concept {
+    img {
+      width: 100%;
+      height: 200px;
     }
+  }
 }

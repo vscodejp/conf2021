@@ -1,68 +1,68 @@
 .section {
-    width: min(80vw, 1080px);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: min(7.2vw, 100px);
+  width: min(80vw, 1080px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: min(7.2vw, 100px);
 }
 
 .section h2 {
-    width: 100%;
-    color: #fefefe;
-    background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
-    text-align: center;
-    font-size: min(1.6vw, 24px);
-    font-family: "UD新ゴ B",sans-serif;
-    padding: min(1.6vw, 22px) 0;
-    border-radius: min(0.4vw, 5px);
+  width: 100%;
+  color: #fefefe;
+  background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
+  text-align: center;
+  font-size: min(1.6vw, 24px);
+  font-family: 'UD新ゴ B', sans-serif;
+  padding: min(1.6vw, 22px) 0;
+  border-radius: min(0.4vw, 5px);
 }
 
 .staffs {
-    margin-top: min(1.8vw, 25px);
-    font-size: min(1.6vw, 24px);
-    font-family: "UD新ゴ B", sans-serif;
-    display: flex;
-    flex-wrap: wrap;
+  margin-top: min(1.8vw, 25px);
+  font-size: min(1.6vw, 24px);
+  font-family: 'UD新ゴ B', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .icon {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  width: 42%;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.info {
+  margin-left: 12px;
+  font-size: min(1.6vw, 24px);
+  font-family: 'UD新ゴ B', sans-serif;
+  padding: min(1.6vw, 22px) 0;
+}
+
+.icon img {
+  border-radius: min(0.4vw, 5px);
+}
+
+@media (max-width: 600px) {
+  .staffs {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon {
     margin: 8px;
     display: flex;
     justify-content: center;
     width: 42%;
 
     img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-.info {
-    margin-left: 12px;
-    font-size: min(1.6vw, 24px);
-    font-family: "UD新ゴ B",sans-serif;
-    padding: min(1.6vw, 22px) 0;
-}
-
-.icon img {
-    border-radius: min(0.4vw, 5px);
-}
-
-@media (max-width: 600px) {
-    .staffs {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .icon {
-        margin: 8px;
-        display: flex;
-        justify-content: center;
-        width: 42%;
-
-    img {
-        width: 60px;
-        height: 60px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
