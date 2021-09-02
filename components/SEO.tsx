@@ -1,10 +1,7 @@
-import Head from "next/head";
-import { conferenceName, description } from "../utils/constants";
+import Head from 'next/head'
+import { conferenceName, description } from '../utils/constants'
 
-const urlPrefix =
-  process.env.NODE_ENV === "production"
-    ? "https://vscodejp.github.io/conf2021"
-    : "";
+const urlPrefix = process.env.NODE_ENV === 'production' ? 'https://vscodejp.github.io/conf2021' : ''
 
 const SEO = () => {
   return (
@@ -27,14 +24,10 @@ const SEO = () => {
         <meta property="twitter:site" content="@vscodejp" />
         <meta property="twitter:creator" content="@vscodejp" />
         <meta property="twitter:site" content="@vscodejp" />
-        <meta
-          property="og:image"
-          content={`${urlPrefix}/concept.png`}
-          key="twitter:title"
-        />
+        <meta property="og:image" content={`${urlPrefix}/concept.png`} key="twitter:title" />
       </Head>
     </>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO

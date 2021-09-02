@@ -1,10 +1,10 @@
-import { FC } from "react";
-import styles from "../static/Section.module.scss";
+import { FC } from 'react'
+import styles from '../static/Section.module.scss'
 
 const About: FC = () => {
   return (
-    <section id={"about"} className={styles.section}>
-      <h2>{"About"}</h2>
+    <section id={'about'} className={styles.section}>
+      <h2>{'About'}</h2>
       <div className={styles.detail}>
         <dl>
           <dt>開催日時</dt>
@@ -33,7 +33,7 @@ const About: FC = () => {
         </dl>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About
