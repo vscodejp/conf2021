@@ -20,7 +20,5 @@
     "**/*.tsx",
     "__mocks__/style-mock.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
