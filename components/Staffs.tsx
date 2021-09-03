@@ -1,12 +1,14 @@
 import { FC } from 'react'
 // import Image from 'next/image'
 import styles from '../static/Staff.module.scss'
+import { useLocale } from '../hooks/useLocale'
 import { members } from '../contents/members'
 
 const Staffs: FC = () => {
+  const { t } = useLocale()
   return (
     <section id={'staffs'} className={styles.section}>
-      <h2>{'Staffs'}</h2>
+      <h2>{t.staffs}</h2>
       <div className={styles.staffs}>
         {members.map((member) => {
           return (

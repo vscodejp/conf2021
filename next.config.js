@@ -13,12 +13,20 @@ const nextConfig = {
     subdomainPrefix: urlPrefix,
     runtimeCaching,
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ja'],
+  },
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/': { page: '/' },
-      '/code-for-conduct': { page: '/code-for-conduct' },
-      '/contact': { page: '/contact' },
-      '/privacy-policy': { page: '/privacy-policy' },
+      '/': { page: '/', query: { locale: 'en' } },
+      '/ja': { page: '/', query: { locale: 'ja' } },
+      '/code-for-conduct': { page: '/code-for-conduct', query: { locale: 'en' } },
+      '/ja/code-for-conduct': { page: '/code-for-conduct', query: { locale: 'ja' } },
+      '/contact': { page: '/contact', query: { locale: 'en' } },
+      '/ja/contact': { page: '/contact', query: { locale: 'ja' } },
+      '/privacy-policy': { page: '/privacy-policy', query: { locale: 'en' } },
+      '/ja/privacy-policy': { page: '/privacy-policy', query: { locale: 'ja' } },
     }
   },
 }
