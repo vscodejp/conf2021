@@ -13,6 +13,10 @@ const nextConfig = {
     subdomainPrefix: urlPrefix,
     runtimeCaching,
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ja'],
+  },
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
       '/': { page: '/' },
