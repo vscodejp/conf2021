@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import i18next from 'i18next'
 import styles from '../static/Section.module.scss'
 
 const About: FC = () => {
@@ -7,27 +8,27 @@ const About: FC = () => {
       <h2>{'About'}</h2>
       <div className={styles.detail}>
         <dl>
-          <dt>開催日時</dt>
-          <dd>2021年 11月 20日</dd>
+          <dt>{i18next.t('date_and_time')}</dt>
+          <dd>{i18next.t('november_20_2021')}</dd>
         </dl>
         <dl>
-          <dt>会場</dt>
-          <dd>オンライン</dd>
+          <dt>{i18next.t('venue')}</dt>
+          <dd>{i18next.t('online')}</dd>
         </dl>
         <dl>
-          <dt>参加費</dt>
-          <dd>無料</dd>
+          <dt>{i18next.t('entry_fee')}</dt>
+          <dd>{i18next.t('free')}</dd>
         </dl>
         <dl>
-          <dt>参加方法</dt>
+          <dt>{i18next.t('way_to_participate')}</dt>
           <dd>
             <a
               href="https://vscode.connpass.com/event/221961/"
-              aria-label="connpass フォームより参加を申し込む"
+              aria-label={i18next.t('apply_for_participation_from_connpass_form')}
               target="_blank"
               rel="noopener noreferrer"
             >
-              connpass フォームより参加を申し込む
+              {i18next.t('apply_for_participation_from_connpass_form')}
             </a>
           </dd>
         </dl>

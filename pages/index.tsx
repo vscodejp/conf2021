@@ -1,40 +1,16 @@
-import Head from 'next/head'
-import styles from '../static/Home.module.scss'
-
-import SEO from '../components/SEO'
-import Header from '../components/Header'
-import Concept from '../components/Concept'
-import About from '../components/About'
-import Speakers from '../components/Speakers'
-import Timetable from '../components/Timetable'
-import Staffs from '../components/Staffs'
-import Footer from '../components/Footer'
-import { conferenceName } from '../utils/constants'
-
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+import React from 'react'
+import { useRouter } from 'next/router'
+import i18next from 'i18next'
 
 export default function Home() {
-  return (
-    <>
-      <SEO />
-      <div className={styles.container}>
-        <Head>
-          <title>{conferenceName}</title>
-          <link rel="icon" href={`${urlPrefix}/favicon.ico`} />
-        </Head>
+  const router = useRouter()
 
-        <Header />
+  React.useEffect(() => {
+    const { pathname } = router
+    if (pathname == '/') {
+      router.push('/' + i18next.language.substring(0, 2))
+    }
+  })
 
-        <main className={styles.main}>
-          <Concept />
-          <About />
-          <Speakers />
-          <Timetable />
-          <Staffs />
-        </main>
-
-        <Footer />
-      </div>
-    </>
-  )
+  return null
 }
