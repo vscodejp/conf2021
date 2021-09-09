@@ -17,14 +17,13 @@
   font-size: 1.6rem;
 }
 
-.wrapper {
+.links-wrapper {
   display: flex;
   align-items: center;
 }
 
 .links {
   font-size: min(1.6vw, 24px);
-  margin-right: min(2.4vw, 48px);
 }
 
 .link:not(:last-of-type) {
@@ -39,18 +38,4 @@
   transition: all 0.3s;
   opacity: 1;
   font-family: AvenirNextLTPro-BoldCn, sans-serif;
-}
-
-@media (max-width: 600px) {
-  .logo {
-    font-size: 1.08rem;
-  }
-
-  .wrapper {
-    flex-direction: row;
-  }
-
-  .links {
-    display: none;
-  }
 }
