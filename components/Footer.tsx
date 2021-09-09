@@ -5,12 +5,13 @@ import styles from '../static/Footer.module.scss'
 import { organizationName } from '../utils/constants'
 
 const Footer: FC = () => {
+  const lang = i18next.language.substring(0, 2)
   return (
     <footer className={styles.footer}>
       <p className={styles.contact}>
-        <Link href="../code-for-conduct">{i18next.t('code_of_conduct')}</Link>
-        <Link href="../privacy-policy">{i18next.t('privacy_policy')}</Link>
-        <Link href="../contact">{i18next.t('contact')}</Link>
+        <Link href={`/${lang}/code-for-conduct`}>{i18next.t('code_of_conduct')}</Link>
+        <Link href={`/${lang}/privacy-policy`}>{i18next.t('privacy_policy')}</Link>
+        <Link href={`/${lang}/contact`}>{i18next.t('contact')}</Link>
       </p>
       <p className={styles.copyright}>
         {`Created © 2021 ${organizationName}. All Rights Reserved.`}
