@@ -39,3 +39,9 @@
   opacity: 1;
   font-family: AvenirNextLTPro-BoldCn, sans-serif;
 }
+
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
+}
