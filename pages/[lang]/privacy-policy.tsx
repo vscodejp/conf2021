@@ -8,6 +8,8 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { defaultLanguage, languages } from '../../i18n.config'
 
+const urlPrefix = process.env.NODE_ENV === 'production' ? 'https://vscodejp.github.io/conf2021' : ''
+
 export default function Home({ terms }) {
   return (
     <div className={styles.container}>
@@ -20,7 +22,7 @@ export default function Home({ terms }) {
           <ReactMarkdown skipHtml={false}>{terms}</ReactMarkdown>
         </div>
 
-        <ButtonElement path={'/'}>{i18next.t('back_to_top')}</ButtonElement>
+        <ButtonElement path={urlPrefix}>{i18next.t('back_to_top')}</ButtonElement>
       </main>
 
       <Footer />
