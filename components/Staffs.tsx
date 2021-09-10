@@ -20,10 +20,7 @@ const Staffs: FC = () => {
           return (
             <div key={member.name} className={styles.icon}>
               <a href={member.url} target="_blank" rel="noopener noreferrer">
-                <img
-                  alt={`Image ${member.name}`}
-                  src={member?.iconFilename ? `../icons/${member?.iconFilename}` : member?.iconName}
-                />
+                <img alt={`Image ${member.name}`} src={`../icons/${member?.iconFilename}`} />
                 <div className={styles.info}>
                   <div className={styles.name}>{member.name}</div>
                 </div>
