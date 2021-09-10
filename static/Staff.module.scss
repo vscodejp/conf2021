@@ -22,20 +22,17 @@
   font-family: 'UD新ゴ B', sans-serif;
   display: flex;
   flex-wrap: wrap;
+}
 
-  .icon {
-    width: 50%;
+.icon {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  width: 42%;
 
-    a {
-      margin: 8px;
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 100px;
-        height: 100px;
-      }
-    }
+  img {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -44,7 +41,6 @@
   font-size: min(1.6vw, 24px);
   font-family: 'UD新ゴ B', sans-serif;
   padding: min(1.6vw, 22px) 0;
-  width: 320px;
 }
 
 .icon img {
@@ -56,18 +52,17 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+  }
 
-    .icon {
-      width: 100%;
+  .icon {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    width: 42%;
 
-      a {
-        margin: 8px;
-
-        img {
-          width: 60px;
-          height: 60px;
-        }
-      }
+    img {
+      width: 60px;
+      height: 60px;
     }
   }
 }
