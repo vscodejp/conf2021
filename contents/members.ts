@@ -34,4 +34,9 @@ export const members = [
     url: 'https://twitter.com/loftkun',
     iconName: 'https://pbs.twimg.com/profile_images/1130041560471486464/2vwZ3x9u_400x400.png',
   },
+  {
+    name: 'もっちゃん／Takashi Kawamoto',
+    url: 'https://twitter.com/kawamoto_LINER',
+    iconName: 'https://pbs.twimg.com/profile_images/1420920544841453572/aYcVk3c__400x400.jpg',
+  },
 ]
