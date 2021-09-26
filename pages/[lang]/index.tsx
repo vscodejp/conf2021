@@ -9,6 +9,7 @@ import About from '../../components/About'
 import Speakers from '../../components/Speakers'
 import Timetable from '../../components/Timetable'
 import Staffs from '../../components/Staffs'
+import Supporters from '../../components/Supporters'
 import Footer from '../../components/Footer'
 import { conferenceName } from '../../utils/constants'
 import { defaultLanguage, languages } from '../../i18n.config'
@@ -33,6 +34,7 @@ export default function Home() {
           <Speakers />
           <Timetable />
           <Staffs />
+          <Supporters />
         </main>
 
         <Footer />
