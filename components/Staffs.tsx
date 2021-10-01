@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import { members } from '../contents/members'
+import { staffs } from '../contents/staffs'
 import People from './People'
 
 const Staffs: FC = () => {
-  return <People people={members} sectionName="staffs" />
+  return <People people={staffs} sectionName="staffs" />
 }
 
 export default Staffs

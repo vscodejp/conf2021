@@ -1,4 +1,4 @@
-export const members = [
+export const staffs = [
   {
     name: 'jiyuujin',
     url: 'https://twitter.com/jiyuujinlab',
