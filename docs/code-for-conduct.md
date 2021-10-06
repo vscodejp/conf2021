@@ -1,4 +1,4 @@
-[Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
+[Contributor Covenant](https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/)
 
 上記の CoC に加え、VS Code に関係せず、営業や勧誘などを主目的とした参加は固くお断りします。
 その場でお声がけしご退場いただく、ブラックリストとして登録し以降の参加を一切お断りする、他の Meetup 主催者とも情報を共有するなど、厳しく対応します。
