@@ -18,14 +18,14 @@ const Header: FC = () => {
           <Link href={`/${lang}/#about`}>
             <a className={styles.link}>{i18next.t('about')}</a>
           </Link>
-          <Link href={`/${lang}/#speakers`}>
-            <a className={styles.link}>{i18next.t('speakers')}</a>
-          </Link>
           <Link href={`/${lang}/#timetable`}>
             <a className={styles.link}>{i18next.t('timetable')}</a>
           </Link>
           <Link href={`/${lang}/#staffs`}>
             <a className={styles.link}>{i18next.t('staffs')}</a>
+          </Link>
+          <Link href={`/${lang}/#supporters`}>
+            <a className={styles.link}>{i18next.t('supporters')}</a>
           </Link>
           <a href="#" className={styles.link}>
             <ColorThemeSwitch />
