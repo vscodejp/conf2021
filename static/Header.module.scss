@@ -1,28 +1,40 @@
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  height: 96px;
-  top: 0;
-  color: #fefefe;
-  background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
-  padding: 0 min(2.4vw, 30px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 9999;
+  overflow: hidden;
+  padding: 20px 10px;
+
+  a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+
+    :hover {
+      color: #0098ff;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    .links_wrapper {
+      display: none;
+    }
+  }
 }
 
-.logo {
-  font-size: 1.6rem;
+.links_wrapper {
+  float: right;
 }
 
-.links-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.links {
+/*.links {
   font-size: min(1.6vw, 24px);
 }
 
@@ -44,4 +56,4 @@
   .links {
     display: none;
   }
-}
+}*/
