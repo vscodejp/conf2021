@@ -1,5 +1,8 @@
-[Contributor Covenant](https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/)
+[コントリビューター行動規範](https://www.contributor-covenant.org/ja/version/2/0/code_of_conduct/)  
+[Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)  
 
-上記の CoC に加え、VS Code に関係せず、営業や勧誘などを主目的とした参加は固くお断りします。
-その場でお声がけしご退場いただく、ブラックリストとして登録し以降の参加を一切お断りする、他の Meetup 主催者とも情報を共有するなど、厳しく対応します。
-また、無断キャンセルも極力控えていただくよう、皆さんのご協力をお願いします！
+本MeetupやConferenceの行動規範として、上記コントリビューター行動規範を採用します。なお、連絡先は各イベントの問い合わせ先を参照ください。connpassの場合は「イベントへのお問い合わせ」からお願いします。
+
+Contributor Covenantはオープンソースプロジェクトを対象とした行動規範ですが、コントリビューター以外のメンバー（イベント参加者、登壇者、スタッフ、スポンサーなど）もコミュニティの一員として広く適用されるものと考えています。また、行動規範上のコミュニティリーダーはMeetupやConferenceのオーガナイザーとして読み替えてください。
+
+上記の行動規範に加え、VS Codeに関係せず、飲食や勧誘などを主目的とした参加は固くお断りします。その場でご退場いただく、ブラックリストとして登録し以降のイベントへの参加を一切お断りする、他のイベント主催者とも情報を共有するなど、厳しく対応します。また、無断キャンセルも極力控えていただくよう、皆さんのご協力をお願いします！
