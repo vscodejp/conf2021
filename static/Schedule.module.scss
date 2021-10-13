@@ -5,7 +5,7 @@
   padding-top: min(7.32064vw, 100px);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .schedule {
     display: grid;
     grid-gap: 1em;
@@ -46,7 +46,7 @@
 }
 
 @supports (display: grid) {
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 600px) {
     .trackslot {
       display: block;
       padding: 10px 5px 5px;
@@ -63,7 +63,7 @@
 }
 
 @supports (display: grid) {
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 600px) {
     .session {
       margin: 0;
     }
