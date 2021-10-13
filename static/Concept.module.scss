@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+    max-width: min(1080px, 100%);
+  }
 }
 
 @media (max-width: 600px) {
@@ -9,6 +12,7 @@
     img {
       width: 100%;
       height: 200px;
+      max-width: 100%;
     }
   }
 }
