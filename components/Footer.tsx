@@ -9,9 +9,21 @@ const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <p className={styles.contact}>
-        <Link href={`/${lang}/code-for-conduct`}>{i18next.t('code_of_conduct')}</Link>
-        <Link href={`/${lang}/privacy-policy`}>{i18next.t('privacy_policy')}</Link>
-        <Link href={`/${lang}/contact`}>{i18next.t('contact')}</Link>
+        <Link href={`/${lang}/code-for-conduct`}>
+          <a aria-label="Link to Code for Conduct" aria-describedby={i18next.t('code_of_conduct')}>
+            {i18next.t('code_of_conduct')}
+          </a>
+        </Link>
+        <Link href={`/${lang}/privacy-policy`}>
+          <a aria-label="Link to Privacy Policy" aria-describedby={i18next.t('privacy_policy')}>
+            {i18next.t('privacy_policy')}
+          </a>
+        </Link>
+        <Link href={`/${lang}/contact`}>
+          <a aria-label="Link to Contact" aria-describedby={i18next.t('contact')}>
+            {i18next.t('contact')}
+          </a>
+        </Link>
       </p>
       <p className={styles.copyright}>
         {`Created © 2021 ${organizationName}. All Rights Reserved.`}

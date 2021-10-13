@@ -11,23 +11,54 @@ const Header: FC = () => {
   return (
     <div className={styles.header}>
       <Link href={`/${lang}/`}>
-        <a className={styles.logo}>{conferenceName}</a>
+        <a aria-label="link to title" aria-describedby="Title" className={styles.logo}>
+          {conferenceName}
+        </a>
       </Link>
-      <div className={styles.linksWrapper}>
+      <div className={styles.links_wrapper}>
         <nav className={styles.links}>
           <Link href={`/${lang}/#about`}>
-            <a className={styles.link}>{i18next.t('about')}</a>
+            <a
+              aria-label="Link to About"
+              aria-describedby={i18next.t('about')}
+              className={styles.link}
+            >
+              {i18next.t('about')}
+            </a>
           </Link>
           <Link href={`/${lang}/#timetable`}>
-            <a className={styles.link}>{i18next.t('timetable')}</a>
+            <a
+              aria-label="Link to Timetable"
+              aria-describedby={i18next.t('timetable')}
+              className={styles.link}
+            >
+              {i18next.t('timetable')}
+            </a>
           </Link>
           <Link href={`/${lang}/#staffs`}>
-            <a className={styles.link}>{i18next.t('staffs')}</a>
+            <a
+              aria-label="Link to Staffs"
+              aria-describedby={i18next.t('staffs')}
+              className={styles.link}
+            >
+              {i18next.t('staffs')}
+            </a>
           </Link>
           <Link href={`/${lang}/#supporters`}>
-            <a className={styles.link}>{i18next.t('supporters')}</a>
+            <a
+              aria-label="link to Aupporters"
+              aria-describedby="Supporters"
+              className={styles.link}
+            >
+              {i18next.t('supporters')}
+            </a>
           </Link>
-          <a href="#" className={styles.link}>
+          <a
+            href="#"
+            aria-label="switch color theme"
+            aria-describedby="Switch Color Theme"
+            className={styles.link}
+          >
             <ColorThemeSwitch />
           </a>
         </nav>
