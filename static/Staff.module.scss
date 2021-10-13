@@ -18,7 +18,7 @@
 
 .staffs {
   margin-top: min(1.8vw, 25px);
-  font-size: min(1.6vw, 24px);
+  font-size: 2.2rem;
   font-family: 'UD新ゴ B', sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -36,6 +36,10 @@
         height: 100px;
       }
     }
+  }
+
+  @media screen and (min-width: 700px) {
+    font-size: 1.6rem;
   }
 }
 
