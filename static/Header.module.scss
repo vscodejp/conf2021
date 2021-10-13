@@ -13,8 +13,20 @@
   z-index: 9999;
 }
 
+@media (max-width: 600px) {
+  .header {
+    height: 64px;
+  }
+}
+
 .logo {
   font-size: 1.6rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.4rem;
+  }
 }
 
 .links-wrapper {
