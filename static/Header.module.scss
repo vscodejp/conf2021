@@ -1,59 +1,57 @@
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  height: 96px;
-  top: 0;
+  overflow: hidden;
+  padding: 20px 10px;
   color: #fefefe;
   background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
-  padding: 0 min(2.4vw, 30px);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 9999;
-}
 
-@media (max-width: 600px) {
-  .header {
+  a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+
+    :hover {
+      color: #0098ff;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
     height: 64px;
+    padding: 10px 0;
+
+    a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    .links_wrapper {
+      display: none;
+    }
   }
 }
 
 .logo {
-  font-size: 1.6rem;
-}
+  font-size: 18px;
 
-@media (max-width: 600px) {
-  .logo {
+  @media (max-width: 600px) {
     font-size: 1.4rem;
   }
 }
 
-.links-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.links {
-  font-size: min(1.6vw, 24px);
-}
-
-.link:not(:last-of-type) {
-  margin-right: min(2.4vw, 48px);
-}
-
-.link:last-of-type {
-  margin-right: 0;
+.links_wrapper {
+  float: right;
 }
 
 .link {
-  transition: all 0.3s;
-  opacity: 1;
-  font-family: AvenirNextLTPro-BoldCn, sans-serif;
-}
+  font-size: 18px;
 
-@media (max-width: 600px) {
-  .links {
-    display: none;
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
   }
 }
