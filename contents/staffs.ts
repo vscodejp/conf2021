@@ -39,4 +39,9 @@ export const staffs = [
     url: 'https://twitter.com/kawamoto_LINER',
     iconName: 'https://pbs.twimg.com/profile_images/1420920544841453572/aYcVk3c__400x400.jpg',
   },
+  {
+    name: 'yamachu',
+    url: 'https://twitter.com/y_chu5',
+    iconFilename: 'yamachu.jpeg',
+  },
 ]
