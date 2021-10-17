@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "conf2021",
+      "request": "launch",
+      "type": "node",
+      "console": "integratedTerminal",
+      "autoAttachChildProcesses": true,
+      "restart": true
+    }
+  ]
+}
