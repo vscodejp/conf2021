@@ -10,8 +10,8 @@ export const supporters = [
     iconName: 'https://pbs.twimg.com/profile_images/1379041781623390213/SvPXdZwE_400x400.jpg',
   },
   {
-    name: 'おおわし',
+    name: 'aetos',
     url: 'https://twitter.com/aetos382',
-    iconName: 'https://pbs.twimg.com/profile_images/1432509994453245955/FgUscnEu_400x400.png',
+    iconName: 'https://pbs.twimg.com/profile_images/1451023248708145163/uwbU9NZm_400x400.png',
   },
 ]
