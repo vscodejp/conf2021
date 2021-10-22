@@ -1,8 +1,8 @@
 .header {
-  overflow: hidden;
   padding: 20px 10px;
   color: #fefefe;
-  background: linear-gradient(22deg, #0098ff, #007acc, #0065a9);
+  /* #0098ff #007acc #0065a9 */
+  background: linear-gradient(22deg, rgba(0, 152, 255, 1), rgba(0, 122, 204, 1), rgba(0, 101, 169, 1));
   width: 100%;
 
   a {
@@ -53,5 +53,18 @@
 
   @media (max-width: 600px) {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navActive {
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+    /* #0098ff #007acc #0065a9 */
+    background: linear-gradient(22deg, rgba(0, 152, 255, 0.5), rgba(0, 122, 204, 0.5), rgba(0, 101, 169, 0.5));
   }
 }
