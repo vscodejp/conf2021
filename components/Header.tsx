@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import i18next from 'i18next'
 import styles from '../static/Header.module.scss'
@@ -6,10 +6,29 @@ import { conferenceName } from '../utils/constants'
 
 import { ColorThemeSwitch } from './ColorThemeSwitch'
 
-const Header: FC = () => {
+const Header: React.FC = () => {
   const lang = i18next.language.substring(0, 2)
+
+  const ref = React.useRef<HTMLDivElement | any>()
+
+  React.useEffect(() => {
+    window.onscroll = function updateNav() {
+      if (isPageOffset()) {
+        ref.current?.classList.add(styles.navActive)
+      } else {
+        ref.current?.classList.remove(styles.navActive)
+      }
+    }
+  }, [])
+
+  function isPageOffset(): boolean {
+    const offset = ref.current?.offsetTop
+
+    return window.pageYOffset > offset!
+  }
+
   return (
-    <div className={styles.header}>
+    <div ref={ref} className={styles.header}>
       <Link href={`/${lang}/`}>
         <a aria-label="link to title" aria-describedby="Title" className={styles.logo}>
           {conferenceName}
