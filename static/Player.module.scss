@@ -1,0 +1,33 @@
+.player {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.player h2 {
+  width: 100%;
+  color: #f52828;
+  text-align: center;
+  font-size: min(1.6vw, 20px);
+  font-family: 'UD新ゴ B', sans-serif;
+  padding: min(1.6vw, 22px) 0;
+  border-radius: min(0.4vw, 5px);
+}
+
+@media (max-width: 600px) {
+  .player {
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
