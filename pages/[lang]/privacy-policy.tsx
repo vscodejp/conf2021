@@ -7,8 +7,7 @@ import ButtonElement from '../../components/ButtonElement'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { defaultLanguage, languages } from '../../i18n.config'
-
-const urlPrefix = process.env.NODE_ENV === 'production' ? 'https://vscodejp.github.io/conf2021' : ''
+import { urlPrefix } from '../../utils/urlPath'
 
 export default function Home({ terms }) {
   return (

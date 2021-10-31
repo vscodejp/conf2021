@@ -1,8 +1,7 @@
 import { FC } from 'react'
 // import Image from 'next/image'
 import styles from '../static/Concept.module.scss'
-
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+import { urlPrefix } from '../utils/urlPath'
 
 const Concept: FC = () => {
   return (
