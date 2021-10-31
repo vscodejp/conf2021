@@ -26,7 +26,7 @@ jobs:
           node-version: '12.x'
 
       - name: Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         env:
           cache-name: _cache_npm_node12
         with:
@@ -38,7 +38,7 @@ jobs:
             ${{ runner.os }}-
       - name: Transpile
         run: |
-          npm install
+          npm ci
           npm run build
         env:
           CI: true
