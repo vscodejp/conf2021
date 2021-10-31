@@ -38,7 +38,7 @@ jobs:
             ${{ runner.os }}-
       - name: Transpile
         run: |
-          npm ci
+          npm install
           npm run build
         env:
           CI: true
