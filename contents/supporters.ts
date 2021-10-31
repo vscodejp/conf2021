@@ -14,4 +14,9 @@ export const supporters = [
     url: 'https://twitter.com/aetos382',
     iconName: 'https://pbs.twimg.com/profile_images/1451023248708145163/uwbU9NZm_400x400.png',
   },
+  {
+    name: 'Nori Suzuki',
+    url: 'https://twitter.com/szkn27',
+    iconName: 'https://pbs.twimg.com/profile_images/1362573976711561216/qAxHDZyi_400x400.jpg',
+  },
 ]
