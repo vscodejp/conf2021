@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import i18next from 'i18next'
 import '../i18n.init'
+import { urlPrefix } from '../utils/urlPath'
 
 import { ColorThemeProvider } from '../lib/ColorThemeContext'
 
 import '../static/globals.scss'
-
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
 
 const MyApp = ({ Component, pageProps }) => {
   i18next.changeLanguage(pageProps.language)

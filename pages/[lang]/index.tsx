@@ -13,8 +13,7 @@ import Supporters from '../../components/Supporters'
 import Footer from '../../components/Footer'
 import { conferenceName } from '../../utils/constants'
 import { defaultLanguage, languages } from '../../i18n.config'
-
-const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
+import { urlPrefix } from '../../utils/urlPath'
 
 export default function Home() {
   return (
