@@ -44,4 +44,9 @@ export const staffs = [
     url: 'https://twitter.com/y_chu5',
     iconFilename: 'yamachu.jpeg',
   },
+  {
+    name: 'まっぴぃ／Yuji Masaoka',
+    url: 'https://twitter.com/mappie_kochi',
+    iconFilename: 'https://pbs.twimg.com/profile_images/1207823591904927745/ib5UY5Hf_400x400.jpg',
+  },
 ]
