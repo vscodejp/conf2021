@@ -47,6 +47,6 @@ export const staffs = [
   {
     name: 'まっぴぃ／Yuji Masaoka',
     url: 'https://twitter.com/mappie_kochi',
-    iconFilename: 'https://pbs.twimg.com/profile_images/1207823591904927745/ib5UY5Hf_400x400.jpg',
+    iconName: 'https://pbs.twimg.com/profile_images/1207823591904927745/ib5UY5Hf_400x400.jpg',
   },
 ]
