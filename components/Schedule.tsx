@@ -75,6 +75,7 @@ const Schedule: FC = () => {
                         </h4>
                         <p className={timetableStyles.sessionPresenter}>
                           {capitalizeFirstCharacter(track.personType)}
+                          {track.presenterLevel && ` / ${i18next.t(track.presenterLevel)}`}
                         </p>
                       </div>
                     )}
