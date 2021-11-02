@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import i18next from 'i18next'
 import timetableStyles from '../static/Schedule.module.scss'
+import { InfoPopover } from './InfoPopover'
 import { tracks, sessions } from '../contents/sessions'
 import { formatTime } from '../utils/dateTime'
 import { capitalizeFirstCharacter } from '../utils/text'
@@ -63,9 +64,9 @@ const Schedule: FC = () => {
                           gridRow: `time-${session.startTime} time-${session.endTime}`,
                         }}
                       >
+                        <InfoPopover track={track} />
                         <h3 className={timetableStyles.sessionTitle}>
                           <div>
-                            <p>{track.presenterName}</p>
                             <p>{track.presenterTitle}</p>
                           </div>
                         </h3>
@@ -74,6 +75,7 @@ const Schedule: FC = () => {
                         </h4>
                         <p className={timetableStyles.sessionPresenter}>
                           {capitalizeFirstCharacter(track.personType)}
+                          {track.presenterLevel && ` / ${i18next.t(track.presenterLevel)}`}
                         </p>
                       </div>
                     )}
