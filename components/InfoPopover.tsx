@@ -1,6 +1,7 @@
 import { FC, useContext, useMemo } from 'react'
 import { Popover } from '@headlessui/react'
 import i18next from 'i18next'
+import { DetailIcon } from './Icon'
 import popoverStyles from '../static/Popover.module.scss'
 import type { ITrack } from '../contents/sessions'
 import { ColorThemeContext } from '../lib/ColorThemeContext'
@@ -20,7 +21,12 @@ export const InfoPopover: FC<InfoPopover> = ({ track }) => {
 
   return (
     <Popover className={popoverStyles.popover_wrapper}>
-      <Popover.Button className={popoverStyles.popover_title}>{track.presenterName}</Popover.Button>
+      {track.presenterName && (
+        <Popover.Button className={popoverStyles.popover_title}>
+          {track.presenterName}
+          <DetailIcon />
+        </Popover.Button>
+      )}
       <Popover.Panel className={popoverStyles.popover_content} style={contentStyles}>
         <h4>{track.presenterTitle}</h4>
         <h5 className={popoverStyles.align_right}>{track.presenterName}</h5>
