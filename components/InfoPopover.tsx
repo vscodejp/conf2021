@@ -31,9 +31,7 @@ export const InfoPopover: FC<InfoPopover> = ({ track }) => {
       <Popover.Panel className={popoverStyles.popover_content} style={contentStyles}>
         <h4>{track.presenterTitle}</h4>
         <h5 className={popoverStyles.align_right}>{track.presenterName}</h5>
-        <p>
-          {track.presenterLive && <div className={tagStyles.tag}>{'Live'}</div>}
-        </p>
+        <p>{track.presenterLive && <div className={tagStyles.tag}>{'Live'}</div>}</p>
         <h6>{i18next.t('bio')}</h6>
         <p dangerouslySetInnerHTML={{ __html: track.presenterBio }} />
         <h6>{i18next.t('session_description')}</h6>
