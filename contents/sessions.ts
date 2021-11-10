@@ -1,4 +1,5 @@
 type TrackID = 'track1' | 'track2'
+type TrackName = 'Track A' | 'Track B'
 type PersonType = 'presenter' | 'inviter'
 
 export interface ITrack {
@@ -21,6 +22,8 @@ interface ISession {
 }
 
 export const tracks: TrackID[] = ['track1', 'track2']
+
+export const trackNames: TrackName[] = ['Track A', 'Track B']
 
 export const sessions: Array<ISession> = [
   {

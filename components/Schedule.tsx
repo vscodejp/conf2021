@@ -2,7 +2,7 @@ import { FC } from 'react'
 import i18next from 'i18next'
 import timetableStyles from '../static/Schedule.module.scss'
 import { InfoPopover } from './InfoPopover'
-import { tracks, sessions } from '../contents/sessions'
+import { tracks, trackNames, sessions } from '../contents/sessions'
 import { formatTime } from '../utils/dateTime'
 import { capitalizeFirstCharacter } from '../utils/text'
 
@@ -18,7 +18,7 @@ const Schedule: FC = () => {
               aria-hidden={'true'}
               style={{ gridColumn: track, gridRow: 'tracks' }}
             >
-              {capitalizeFirstCharacter(track)}
+              {trackNames[val]}
             </span>
           )
         })}
