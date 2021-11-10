@@ -14,6 +14,7 @@ import Footer from '../../components/Footer'
 import { conferenceName } from '../../utils/constants'
 import { defaultLanguage, languages } from '../../i18n.config'
 import { urlPrefix } from '../../utils/urlPath'
+import { Social } from '../../components/Social'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <Concept />
+          <Social />
           <About />
           <Player />
           <Timetable />
