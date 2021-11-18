@@ -12,6 +12,13 @@ export const Social = () => {
         >
           {'Tweet #vscodejp_A'}
         </TweetButtonElement>
+        <TweetButtonElement
+          path="https://twitter.com/i/spaces/1OdJrBagjMnJX"
+          isExternalLink
+          showSpaces
+        >
+          {'Ask the Speaker at A'}
+        </TweetButtonElement>
       </div>
       <div className={styles.social_wrapper}>
         <TweetButtonElement
@@ -19,6 +26,13 @@ export const Social = () => {
           isExternalLink
         >
           {'Tweet #vscodejp_B'}
+        </TweetButtonElement>
+        <TweetButtonElement
+          path="https://twitter.com/i/spaces/1DXxyDBqqLVJM"
+          isExternalLink
+          showSpaces
+        >
+          {'Ask the Speaker at B'}
         </TweetButtonElement>
       </div>
     </>

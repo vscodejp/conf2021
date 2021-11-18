@@ -27,10 +27,12 @@ export const ButtonElement = ({
 export const TweetButtonElement = ({
   path,
   isExternalLink,
+  showSpaces,
   children,
 }: {
   path: string
   isExternalLink?: boolean
+  showSpaces?: boolean
   children: React.ReactNode
 }) => {
   return (
@@ -39,6 +41,7 @@ export const TweetButtonElement = ({
       target={isExternalLink && '_blank'}
       rel={isExternalLink && 'noopener noreferrer'}
       className={styles.tweet_button}
+      style={showSpaces ? { backgroundColor: '#8f5dfc' } : { backgroundColor: '#1da1f2' }}
       role="button"
     >
       {children}
