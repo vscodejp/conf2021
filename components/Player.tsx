@@ -17,6 +17,9 @@ export const PreEventPlayer: FC = () => {
 export const MainEventPlayer: FC = () => {
   return (
     <div id={'player'} className={playerStyles.player}>
+      <h2>{'Handson'}</h2>
+      <p>{i18next.t('subscribing_to_the_youtube_channel')}</p>
+      <ReactPlayer width={'100%'} url="https://youtu.be/wmjX6-mDsME" />
       <h2>{'Track A'}</h2>
       <p>{i18next.t('subscribing_to_the_youtube_channel')}</p>
       <ReactPlayer width={'100%'} url="https://youtu.be/AAVTnEa4vEs" />
