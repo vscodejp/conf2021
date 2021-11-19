@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .player-wrapper {
+    width: 100%;
+    max-width: 640px;
+  }
 }
 
 .player h2 {
