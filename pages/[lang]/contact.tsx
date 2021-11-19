@@ -19,6 +19,7 @@ export default function Home() {
             path={
               'https://docs.google.com/forms/d/e/1FAIpQLSeDsAlBwncykjmyia0Z-7W-1IMIPHBGZisRZJT_KZ8J8y6rRQ/viewform'
             }
+            tooltip={i18next.t('there_is_google_form')}
             isExternalLink
           >
             {i18next.t('there_is_google_form')}
