@@ -24,6 +24,11 @@ const Footer: FC = () => {
             {i18next.t('contact')}
           </a>
         </Link>
+        <Link href={`/${lang}/pre-event`}>
+          <a aria-label="Link to Pre Event" aria-describedby={i18next.t('pre_event')}>
+            {i18next.t('pre_event')}
+          </a>
+        </Link>
       </p>
       <p className={styles.copyright}>
         {`Created © 2021 ${organizationName}. All Rights Reserved.`}

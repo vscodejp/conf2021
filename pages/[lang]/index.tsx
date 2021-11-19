@@ -6,7 +6,7 @@ import SEO from '../../components/SEO'
 import Header from '../../components/Header'
 import Concept from '../../components/Concept'
 import About from '../../components/About'
-import Player from '../../components/Player'
+import { MainEventPlayer } from '../../components/Player'
 import Timetable from '../../components/Timetable'
 import Staffs from '../../components/Staffs'
 import Supporters from '../../components/Supporters'
@@ -32,7 +32,7 @@ export default function Home() {
           <Concept />
           <Social />
           <About />
-          <Player />
+          <MainEventPlayer />
           <Timetable />
           <Staffs />
           <Supporters />
