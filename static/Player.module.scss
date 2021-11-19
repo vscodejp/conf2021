@@ -5,11 +5,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  .player-wrapper {
-    width: 100%;
-    max-width: 640px;
-  }
+  margin-top: 16px;
+  max-width: 640px;
 }
 
 .player h2 {
@@ -25,7 +22,6 @@
 @media (max-width: 600px) {
   .player {
     position: relative;
-    width: 360px;
     max-width: 100%;
     iframe {
       position: absolute;
