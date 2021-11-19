@@ -4,16 +4,19 @@ import { TwitterLightIcon } from './Icon'
 
 export const ButtonElement = ({
   path,
+  tooltip,
   isExternalLink,
   children,
 }: {
   path: string
+  tooltip: string
   isExternalLink?: boolean
   children: React.ReactNode
 }) => {
   return (
     <a
       href={path}
+      title={tooltip}
       target={isExternalLink && '_blank'}
       rel={isExternalLink && 'noopener noreferrer'}
       className={styles.button}
@@ -26,11 +29,13 @@ export const ButtonElement = ({
 
 export const TweetButtonElement = ({
   path,
+  tooltip,
   isExternalLink,
   showSpaces,
   children,
 }: {
   path: string
+  tooltip: string
   isExternalLink?: boolean
   showSpaces?: boolean
   children: React.ReactNode
@@ -38,6 +43,7 @@ export const TweetButtonElement = ({
   return (
     <a
       href={path}
+      title={tooltip}
       target={isExternalLink && '_blank'}
       rel={isExternalLink && 'noopener noreferrer'}
       className={styles.tweet_button}
