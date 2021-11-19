@@ -40,6 +40,10 @@ export const Social = () => {
           {'Ask the Speaker at B'}
         </TweetButtonElement>
       </div>
+      <div
+        className={styles.social_annotation}
+        dangerouslySetInnerHTML={{ __html: i18next.t('annotation_of_ask_the_speaker') }}
+      />
     </>
   )
 }
