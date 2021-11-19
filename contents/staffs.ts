@@ -49,4 +49,19 @@ export const staffs = [
     url: 'https://twitter.com/mappie_kochi',
     iconName: 'https://pbs.twimg.com/profile_images/1207823591904927745/ib5UY5Hf_400x400.jpg',
   },
+  {
+    name: 'Keisuke Sawa',
+    url: null,
+    iconFilename: 'sawa.png',
+  },
+  {
+    name: 'Yuki Ueda',
+    url: 'https://twitter.com/ikuyadeu0513',
+    iconName: 'https://pbs.twimg.com/profile_images/506342767945973760/Sns3qBUE_400x400.jpeg',
+  },
+  {
+    name: 'Masato Nabeshima',
+    url: 'https://twitter.com/nabemasat',
+    iconName: 'https://pbs.twimg.com/profile_images/1441365681589522450/_L0iO1Wi_400x400.jpg',
+  },
 ]
