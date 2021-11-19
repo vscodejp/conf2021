@@ -6,6 +6,7 @@
   "tweet_at_vscodejp_b": "#vscodejp_Bを付けてツイートしよう！",
   "join_ask_the_speaker_at_a": "Ask the Speaker (A) に参加しよう！",
   "join_ask_the_speaker_at_b": "Ask the Speaker (B) に参加しよう！",
+  "subscribing_to_the_youtube_channel": "YouTube チャンネル登録よろしくお願いします！",
   "coming_soon": "募集中",
   "about": "詳細",
   "date_and_time": "開催日時",
@@ -29,6 +30,7 @@
   "code_of_conduct": "行動規範",
   "privacy_policy": "プライバシーポリシー",
   "contact": "お問い合わせ",
+  "pre_event": "プレイベント",
   "there_is_google_form": "Google フォームはこちら",
   "back_to_top": "トップに戻る"
 }

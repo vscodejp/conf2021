@@ -6,6 +6,7 @@
   "tweet_at_vscodejp_b": "Please tweet at #vscodejp_A!",
   "join_ask_the_speaker_at_a": "Please join Ask the Speaker at A!",
   "join_ask_the_speaker_at_b": "Please join Ask the Speaker at B!",
+  "subscribing_to_the_youtube_channel": "Thank you for subscribing to the YouTube channel!",
   "coming_soon": "Coming Soon",
   "about": "About",
   "date_and_time": "Date, time",
@@ -29,6 +30,7 @@
   "code_of_conduct": "Code of Conduct",
   "privacy_policy": "Privacy Policy",
   "contact": "Contact",
+  "pre_event": "Pre Event",
   "there_is_google_form": "There is Google form",
   "back_to_top": "Back to Top"
 }
