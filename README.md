@@ -1,6 +1,9 @@
 # VS Code Conference JP 2021 official website
 
-[VS Code Conference JP 2021](https://vscodejp.github.io/conf2021)
+⚠️ Migrated to the [repository](https://github.com/vscodejp/conference) from here.
+
+- [https://vscodejp.github.io/conference/2021](https://vscodejp.github.io/conference/2021)
+- [https://vscodejp.github.io/conf2021](https://vscodejp.github.io/conf2021)
 
 ## Development
 
