@@ -38,8 +38,8 @@ jobs:
 
       - name: Transpile
         run: |
-          npm ci
-          npm run build
+          yarn
+          yarn build
         env:
           CI: true
           URL_PREFIX: conf2021
@@ -48,7 +48,7 @@ jobs:
       # `_` から始まるディレクトリが見えず 404 となってしまう対策を追加
       - name: Export
         run: |
-          npm run export
+          yarn export
           touch out/.nojekyll
 
       - name: Deploy

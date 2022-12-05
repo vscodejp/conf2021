@@ -39,7 +39,7 @@ jobs:
 
       - name: Transpile
         run: |
-          npm ci
-          npm run build
+          yarn
+          yarn build
         env:
           CI: true
