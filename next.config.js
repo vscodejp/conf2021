@@ -1,11 +1,11 @@
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
+// const withPWA = require('next-pwa')
+// const runtimeCaching = require('next-pwa/cache')
 
 const urlPrefix = process.env.NODE_ENV === 'production' ? '/conf2021' : ''
 
 const nextConfig = {
-  target: 'server',
-  assetPrefix: urlPrefix,
+  mode: 'server',
+  // modifyURLPrefix: urlPrefix,
   basePath: urlPrefix,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
@@ -19,11 +19,11 @@ const nextConfig = {
     return config
   },
   trailingSlash: true,
-  pwa: {
-    dest: 'public',
-    subdomainPrefix: urlPrefix,
-    runtimeCaching,
-  },
+  // pwa: {
+  //   swDest: 'public',
+  //   subdomainPrefix: urlPrefix,
+  //   runtimeCaching,
+  // },
 }
 
-module.exports = withPWA(nextConfig)
+module.exports = nextConfig
