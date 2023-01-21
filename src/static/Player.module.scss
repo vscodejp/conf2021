@@ -1,43 +1,37 @@
-.player {
-  padding: 20px 0;
+.wrapper {
   width: 100%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 16px;
-  max-width: 640px;
+  gap: 4;
 }
 
-.player h2 {
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  color: #f52828;
-  text-align: center;
-  font-size: min(1.8vw, 20px);
-  font-family: 'UD新ゴ B', sans-serif;
-  padding-top: min(1.6vw, 22px);
-  border-radius: min(0.4vw, 5px);
+  height: 90%;
 }
 
-.player p {
+.container {
+  position: relative;
+  height: 0;
+  padding-bottom: 35%;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  text-align: center;
-  font-size: min(1.6vw, 18px);
-  font-family: 'UD新ゴ B', sans-serif;
-  padding: 0;
-  border-radius: min(0.4vw, 5px);
+  height: 90%;
 }
 
 @media (max-width: 600px) {
   .player {
     position: relative;
     max-width: 100%;
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   }
 }
