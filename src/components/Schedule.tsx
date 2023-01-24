@@ -1,6 +1,5 @@
 import { FC } from 'root/react-app-env'
-import { Fragment, useState } from 'react'
-import { useEffectOnce } from 'react-use'
+import { Fragment } from 'react'
 import { Popover as Parent } from '@headlessui/react'
 import { t } from 'i18next'
 import { useString } from '@hooks/useString'
@@ -11,24 +10,20 @@ import { tracks, trackNames, sessions as resources } from '@contents/sessions'
 import styles from '@static/Schedule.module.scss'
 
 const Schedule: FC = () => {
-  const [sessions, setSessions] = useState([])
-  const { capitalizeFirst } = useString()
-  const { groupBy } = useArray()
-
-  useEffectOnce(() => {
-    const get = (temp) => {
-      const result = []
-      temp.forEach((session) => {
-        result.push({
-          time: session[0],
-          tracks: session[1],
-        })
+  const get = (temp) => {
+    const result = []
+    temp.forEach((session) => {
+      result.push({
+        time: session[0],
+        tracks: session[1],
       })
-      return result
-    }
+    })
+    return result
+  }
 
-    setSessions(get(groupBy(resources, (x) => `${x.started_at} ${x.ended_at}`)))
-  })
+  const { groupBy } = useArray()
+  const { capitalizeFirst } = useString()
+  const sessions = get(groupBy(resources, (x) => `${x.started_at} ${x.ended_at}`))
 
   return (
     <div className={styles.schedule}>
