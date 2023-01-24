@@ -1,6 +1,5 @@
 import { FC } from 'root/react-app-env'
-import { Fragment, useState } from 'react'
-import { useEffectOnce } from 'react-use'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover as Parent } from '@headlessui/react'
 import { t } from 'i18next'
 import { useString } from '@hooks/useString'
@@ -15,7 +14,7 @@ const Schedule: FC = () => {
   const { capitalizeFirst } = useString()
   const { groupBy } = useArray()
 
-  useEffectOnce(() => {
+  useEffect(() => {
     const get = (temp) => {
       const result = []
       temp.forEach((session) => {
@@ -28,7 +27,8 @@ const Schedule: FC = () => {
     }
 
     setSessions(get(groupBy(resources, (x) => `${x.started_at} ${x.ended_at}`)))
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className={styles.schedule}>
