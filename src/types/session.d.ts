@@ -1,21 +1,27 @@
 export type TrackID = 'track1' | 'track2'
 export type TrackName = 'Track A' | 'Track B'
+
+export type Area = 'Track A' | 'Track B'
+
 export type PersonType = 'presenter' | 'inviter'
 
-export interface ITrack {
-  trackId: TrackID
-  personType?: PersonType
-  presenterName?: string
-  presenterTitle: string
-  presenterDescription?: string
-  presenterLive?: boolean
-  presenterLevel?: 'beginner' | 'intermediate'
-  presenterBio?: string
-  presenterUrl?: string
+export interface ISpeaker {
+  name: string
+  affiliation: string
+  description: string
+  twitter: string
+  facebook: string
 }
 
 export interface ISession {
-  tracks: Array<ITrack>
-  startTime: string
-  endTime: string
+  title: string
+  description: string
+  started_at: string
+  ended_at: string
+  speaker?: ISpeaker
+  area: Pick<Area, 'Track A' | 'Track B'> | string
+  type?: PersonType
+  isLive?: boolean
+  documentUrl?: string
+  movieUrl?: string
 }

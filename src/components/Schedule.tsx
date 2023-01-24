@@ -1,21 +1,39 @@
 import { FC } from 'root/react-app-env'
-import { Fragment } from 'react'
-import { Popover as _Popover } from '@headlessui/react'
-import i18next from 'i18next'
+import { Fragment, useState } from 'react'
+import { useEffectOnce } from 'react-use'
+import { Popover as Parent } from '@headlessui/react'
+import { t } from 'i18next'
 import { useString } from '@hooks/useString'
-import { useDateTime } from '@hooks/useDateTime'
-import { Popover } from '@components/module/Popover'
-import { tracks, trackNames, sessions } from '@contents/sessions'
-import styles from '@static/Schedule.module.scss'
+import { useArray } from '@hooks/useArray'
 import { DetailIcon } from '@components/Icon'
+import { Popover } from '@components/module/Popover'
+import { tracks, trackNames, sessions as resources } from '@contents/sessions'
+import styles from '@static/Schedule.module.scss'
 
 const Schedule: FC = () => {
-  const { formatTime } = useDateTime()
+  const [sessions, setSessions] = useState([])
   const { capitalizeFirst } = useString()
+  const { groupBy } = useArray()
+
+  useEffectOnce(() => {
+    const get = (temp) => {
+      const result = []
+      temp.forEach((session) => {
+        result.push({
+          time: session[0],
+          tracks: session[1],
+        })
+      })
+      return result
+    }
+
+    setSessions(get(groupBy(resources, (x) => `${x.started_at} ${x.ended_at}`)))
+  })
 
   return (
-    <div className={styles.schedule} aria-labelledby={'schedule-heading'}>
+    <div className={styles.schedule}>
       <Fragment>
+        <div />
         {tracks.map((track: string, val: number) => {
           return (
             <span
@@ -37,64 +55,50 @@ const Schedule: FC = () => {
               <h2
                 className={styles.timeslot}
                 aria-hidden={'true'}
-                style={{ gridRow: `time-${session.startTime}` }}
+                style={{ gridRow: `time-${session.time.split(' ')[0]}` }}
               >
-                {formatTime(session.startTime)}
+                {session.time.split(' ')[0]}
               </h2>
               {session.tracks.map((track, key) => {
                 return (
                   <Fragment key={key}>
-                    {track.presenterTitle === '' ? (
+                    {track.title === '' ? (
                       <div />
-                    ) : track.presenterTitle === 'Rest' ? (
-                      <div
-                        className={`${styles.session} ${styles.rest}`}
-                        aria-hidden={'true'}
-                        style={{
-                          gridColumn: track.trackId,
-                          gridRow: `time-${session.startTime} time-${session.endTime}`,
-                        }}
-                      >
-                        {i18next.t('rest_ask_the_speaker')}
-                      </div>
                     ) : (
                       <div
                         className={`${styles.session} ${styles.track1}`}
                         style={{
-                          gridColumn: track.trackId,
-                          gridRow: `time-${session.startTime} time-${session.endTime}`,
+                          gridColumn: `track${key + 1}`,
+                          gridRow: `time-${track.started_at} time-${track.ended_at}`,
                         }}
                       >
                         <Popover
                           content={
                             <Fragment>
-                              <h4>{track.presenterTitle}</h4>
-                              <h5 className={styles.align_right}>{track.presenterName}</h5>
-                              {track.presenterLive && <p className={styles.tag}>{'Live'}</p>}
-                              <h6>{i18next.t('bio')}</h6>
-                              <p dangerouslySetInnerHTML={{ __html: track.presenterBio }} />
-                              <h6>{i18next.t('session_description')}</h6>
-                              <p dangerouslySetInnerHTML={{ __html: track.presenterDescription }} />
+                              <h4>{track.title}</h4>
+                              <h5 className={styles.align_right}>{track.speaker.name}</h5>
+                              {track.isLive && <p className={styles.tag}>{'Live'}</p>}
+                              <h6>{t('bio')}</h6>
+                              <p dangerouslySetInnerHTML={{ __html: track.speaker.affiliation }} />
+                              <h6>{t('session_description')}</h6>
+                              <p dangerouslySetInnerHTML={{ __html: track.description }} />
                             </Fragment>
                           }
                         >
-                          <_Popover.Button className={styles.title}>
-                            {track.presenterName}
+                          <Parent.Button className={styles.title}>
+                            {track.speaker.name}
                             <DetailIcon />
-                          </_Popover.Button>
+                          </Parent.Button>
                         </Popover>
                         <h3 className={styles.sessionTitle}>
                           <div>
-                            <div>{track.presenterTitle}</div>
+                            <div>{track.title}</div>
                           </div>
                         </h3>
                         <h4 className={styles.sessionTime}>
-                          {`${formatTime(session.startTime)} - ${formatTime(session.endTime)}`}
+                          {`${track.started_at} - ${track.ended_at}`}
                         </h4>
-                        <div className={styles.sessionPresenter}>
-                          {capitalizeFirst(track.personType)}
-                          {track.presenterLevel && ` / ${i18next.t(track.presenterLevel)}`}
-                        </div>
+                        <div className={styles.sessionPresenter}>{capitalizeFirst(track.type)}</div>
                       </div>
                     )}
                   </Fragment>
