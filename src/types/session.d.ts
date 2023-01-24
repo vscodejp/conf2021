@@ -1,7 +1,7 @@
 export type TrackID = 'track1' | 'track2'
-export type TrackName = 'Track A' | 'Track B'
 
 export type Area = 'Track A' | 'Track B'
+export type TrackName = Extract<Area, 'Track A' | 'Track B'>
 
 export type PersonType = 'presenter' | 'inviter'
 
